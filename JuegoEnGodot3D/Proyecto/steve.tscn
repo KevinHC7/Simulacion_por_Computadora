@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvrgxk83lmj8k"]
+
+[ext_resource type="Script" path="res://steve.gd" id="1_yv0uh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58p2b"]
+albedo_color = Color(0, 0.890196, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sdkwg"]
+material = SubResource("StandardMaterial3D_58p2b")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ja6lh"]
+
+[node name="Steve" type="CharacterBody3D"]
+script = ExtResource("1_yv0uh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_sdkwg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_ja6lh")
+
+[node name="Camera_Controller" type="Node3D" parent="."]
+top_level = true
+
+[node name="Camera_Target" type="Node3D" parent="Camera_Controller"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 2.7, 4.6)
+
+[node name="Camera3D" type="Camera3D" parent="Camera_Controller/Camera_Target"]
+transform = Transform3D(1, 0, 0, 0, 1, -5.96046e-08, 0, 5.96046e-08, 1, 0, -0.211798, -1.20214)
+current = true
