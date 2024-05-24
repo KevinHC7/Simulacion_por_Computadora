@@ -1,0 +1,34 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1716527929
+icon.svg::CompressedTexture2D::8788810445164620394::1685200008::1716522903::1::::<><>::
+main_menu.tscn::PackedScene::968002707444517709::1716527637::0::1::::<><>::res://Scripts/main_menu.gd<>uid://52nn6qvfdcf6::::res://Edificio/EdificioCuciGBLVer.glb<>res://Scripts/menu.gd
+the world we should have gotten _ frutiger aero playlist.mp3::AudioStreamMP3::3495617220450004577::1716527422::1716527950::1::::<><>::
+World.tscn::PackedScene::7746286076614849443::1716527636::0::1::::<><>::res://Scripts/Player.gd<>uid://52nn6qvfdcf6::::res://Edificio/EdificioCuciGBLVer.glb
+::res://Edificio/::1716523040
+EdificioCuciGBLVer.glb::PackedScene::2162217698628984281::1716486879::1716523039::1::::<><>::uid://b3sx1ptehibex::::res://Edificio/EdificioCuciGBLVer_Brick_Pavers_Herringbone.png<>uid://bcq3jtwd4ut8h::::res://Edificio/EdificioCuciGBLVer_Roofing_Metal_Standing_Seam_Red.png<>uid://be65rycqibn7::::res://Edificio/EdificioCuciGBLVer_DSC05946.png<>uid://bbkmfloh6ewsp::::res://Edificio/EdificioCuciGBLVer_t-muro.png<>uid://lp1cjd0dcdry::::res://Edificio/EdificioCuciGBLVer_P.png<>uid://0hbygvvagf4p::::res://Edificio/EdificioCuciGBLVer_DSC05074 COP.png<>uid://cgpfu76t1jwe8::::res://Edificio/EdificioCuciGBLVer_MURO.png<>uid://1r5yc4t6yrih::::res://Edificio/EdificioCuciGBLVer_DSC05062.png<>uid://clct3yw3aqus2::::res://Edificio/EdificioCuciGBLVer_DSC05062_8.png<>uid://dovx6pm162s8n::::res://Edificio/EdificioCuciGBLVer_PLANTAS.png<>uid://bn61moqjwivb3::::res://Edificio/EdificioCuciGBLVer_DSC06182.png<>uid://8tk5ultc6kbs::::res://Edificio/EdificioCuciGBLVer_t-escaleras.png<>uid://bbbhgfavfnxgv::::res://Edificio/EdificioCuciGBLVer_t-m barandal.png<>uid://n4vmgphjihpp::::res://Edificio/EdificioCuciGBLVer_modulo-pb.png<>uid://probw8memlue::::res://Edificio/EdificioCuciGBLVer_Google Earth Snapshot.png
+EdificioCuciGBLVer_Brick_Pavers_Herringbone.png::CompressedTexture2D::4390310843999187603::1716523037::1716523040::1::::<><>::
+EdificioCuciGBLVer_DSC05062.png::CompressedTexture2D::1861868875996260651::1716523038::1716523040::1::::<><>::
+EdificioCuciGBLVer_DSC05062_8.png::CompressedTexture2D::5550252323823522895::1716523038::1716523040::1::::<><>::
+EdificioCuciGBLVer_DSC05074 COP.png::CompressedTexture2D::1769275659811092109::1716523038::1716523040::1::::<><>::
+EdificioCuciGBLVer_DSC05946.png::CompressedTexture2D::80383085332005470::1716523037::1716523040::1::::<><>::
+EdificioCuciGBLVer_DSC06182.png::CompressedTexture2D::3364472193184591570::1716523039::1716523040::1::::<><>::
+EdificioCuciGBLVer_Google Earth Snapshot.png::CompressedTexture2D::1088780107125441720::1716523039::1716523040::1::::<><>::
+EdificioCuciGBLVer_modulo-pb.png::CompressedTexture2D::973618747179674137::1716523039::1716523040::1::::<><>::
+EdificioCuciGBLVer_MURO.png::CompressedTexture2D::5225281125901761929::1716523038::1716523040::1::::<><>::
+EdificioCuciGBLVer_P.png::CompressedTexture2D::804625638213532550::1716523037::1716523040::1::::<><>::
+EdificioCuciGBLVer_PLANTAS.png::CompressedTexture2D::8186710452903428031::1716523038::1716523040::1::::<><>::
+EdificioCuciGBLVer_Roofing_Metal_Standing_Seam_Red.png::CompressedTexture2D::2561545595081946373::1716523037::1716523040::1::::<><>::
+EdificioCuciGBLVer_t-escaleras.png::CompressedTexture2D::2356116829454043156::1716523039::1716523040::1::::<><>::
+EdificioCuciGBLVer_t-m barandal.png::CompressedTexture2D::2459109902376101909::1716523039::1716523040::1::::<><>::
+EdificioCuciGBLVer_t-muro.png::CompressedTexture2D::2477991437498224315::1716523037::1716523040::1::::<><>::
+::res://Materials/::1685200008
+Blue.tres::StandardMaterial3D::1109378511400077276::1685200008::0::1::::<><>::
+Green.tres::StandardMaterial3D::4460615660192160260::1685200008::0::1::::<><>::
+Pink.tres::StandardMaterial3D::3002083277062480744::1685200008::0::1::::<><>::
+Red.tres::StandardMaterial3D::4268741505349743764::1685200008::0::1::::<><>::
+::res://Scenes/::1716522912
+World.tscn::PackedScene::7285665154832654338::1716522912::0::1::::<><>::res://Scripts/Player.gd<>uid://b4s0xnt1f6lia::::res://Materials/Green.tres<>uid://bi1h4xe7msjwi::::res://Materials/Pink.tres<>uid://b122sws3pt7w7::::res://Materials/Red.tres<>uid://p2nkjd3ge3qm::::res://Materials/Blue.tres
+::res://Scripts/::1716526998
+Player.gd::GDScript::-1::1685200008::0::1::::<>CharacterBody3D<>::
+menu.gd::GDScript::-1::1716526998::0::1::::<>VBoxContainer<>::
+main_menu.gd::GDScript::-1::1716526868::0::1::::<>Node3D<>::

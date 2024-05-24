@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://7ond0mwdu3pe"]
+
+[ext_resource type="AudioStream" uid="uid://bp2kkmp8glcq8" path="res://the world we should have gotten _ frutiger aero playlist.mp3" id="1_w1515"]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D"]
+stream = ExtResource("1_w1515")
+autoplay = true

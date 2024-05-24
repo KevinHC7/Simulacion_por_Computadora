@@ -1,0 +1,9 @@
+AudioStreamPlayer3D
+Label
+TextEdit
+Node3D
+Button
+VBoxContainer
+Camera3D
+CollisionShape3D
+StaticBody3D

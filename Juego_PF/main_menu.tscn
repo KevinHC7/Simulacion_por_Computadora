@@ -1,0 +1,200 @@
+[gd_scene load_steps=23 format=3 uid="uid://n154l228wnq0"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_g0ebr"]
+[ext_resource type="PackedScene" uid="uid://52nn6qvfdcf6" path="res://Edificio/EdificioCuciGBLVer.glb" id="2_lw5le"]
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="2_mko1u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oyg88"]
+size = Vector3(63.6735, 0.313568, 2.01463)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pbror"]
+size = Vector3(63.6817, 9.24109, 0.384033)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aqsbn"]
+size = Vector3(63.9356, 0.15332, 27.3851)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_04nc3"]
+size = Vector3(60.0678, 8.66846, 0.528625)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ci020"]
+size = Vector3(1.98242, 1.20996, 0.170044)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pd1cq"]
+size = Vector3(0.606247, 7.15479, 3.77173)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_55day"]
+size = Vector3(3.34723, 0.172363, 3.28638)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fy6jr"]
+size = Vector3(1.87927, 1, 1.23047)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b1x7r"]
+size = Vector3(1.40967, 0.47168, 3.88475)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gvxa8"]
+size = Vector3(1.50513, 1, 3.32172)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rx4l1"]
+size = Vector3(1.55859, 1, 3.99237)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m84b2"]
+size = Vector3(1.50739, 1, 3.24487)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u6huf"]
+size = Vector3(3.81567, 9.51193, 0.498291)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wxagg"]
+size = Vector3(0.211426, 9.20911, 20.0966)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ga8ui"]
+size = Vector3(63.8948, 9.16846, 0.185974)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_peanu"]
+size = Vector3(0.318359, 9.22253, 19.9529)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5lq0h"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_f6bkd"]
+sky_material = SubResource("ProceduralSkyMaterial_5lq0h")
+
+[sub_resource type="Environment" id="Environment_g2h84"]
+background_mode = 2
+sky = SubResource("Sky_f6bkd")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="World" type="Node3D"]
+script = ExtResource("1_g0ebr")
+
+[node name="Edificio" type="StaticBody3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="EdificioCuciGBLVer" parent="Edificio" instance=ExtResource("2_lw5le")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.37964, -0.989677, -39.367)
+
+[node name="Suelo_P3" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.64447, 5.51998, -35.2793)
+shape = SubResource("BoxShape3D_oyg88")
+
+[node name="Suelo_P2" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.64447, 2.33544, -35.2736)
+shape = SubResource("BoxShape3D_oyg88")
+
+[node name="Pared_AntiCaida" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.65439, 4.12054, -34.2765)
+shape = SubResource("BoxShape3D_pbror")
+
+[node name="Suelo_PFinal" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.70025, -0.58431, -29.9534)
+shape = SubResource("BoxShape3D_aqsbn")
+
+[node name="Pared_AntiSalon" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.53043, 3.74341, -36.3365)
+shape = SubResource("BoxShape3D_04nc3")
+
+[node name="MiniPared_P3" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6855, 6.08046, -36.0401)
+shape = SubResource("BoxShape3D_ci020")
+
+[node name="Pared_Media" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.4164, 3.07739, -37.8298)
+shape = SubResource("BoxShape3D_pd1cq")
+
+[node name="MiniPiso_P2" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.4424, 4.34755, -41.1653)
+shape = SubResource("BoxShape3D_55day")
+
+[node name="MiniPiso_P1" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.4424, 1.23475, -41.1653)
+shape = SubResource("BoxShape3D_55day")
+
+[node name="MiniPiso_P3" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5557, 2.08296, -36.4983)
+shape = SubResource("BoxShape3D_fy6jr")
+
+[node name="Rampa_1" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 0.956223, 0.292639, 0, -0.292639, 0.956223, -23.3902, 4.79939, -37.6296)
+shape = SubResource("BoxShape3D_b1x7r")
+
+[node name="Rampa_2" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 0.838338, -0.545151, 0, 0.545151, 0.838338, -21.4582, 3.08955, -38.4215)
+shape = SubResource("BoxShape3D_gvxa8")
+
+[node name="Rampa_3" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 0.944273, 0.329163, 0, -0.329163, 0.944273, -23.3679, 1.48538, -37.6301)
+shape = SubResource("BoxShape3D_rx4l1")
+
+[node name="Rampa_4" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 0.841218, -0.540696, 0, 0.540696, 0.841218, -21.5083, -0.00119193, -38.4575)
+shape = SubResource("BoxShape3D_m84b2")
+
+[node name="Pared_Trasera" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3926, 3.74191, -43.31)
+shape = SubResource("BoxShape3D_u6huf")
+
+[node name="ParedGigante1" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.6108, 4.10455, -26.3355)
+shape = SubResource("BoxShape3D_wxagg")
+
+[node name="ParedGigante2" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55373, 4.08423, -16.3076)
+shape = SubResource("BoxShape3D_ga8ui")
+
+[node name="ParedGigante3" type="CollisionShape3D" parent="Edificio"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.3408, 4.11127, -26.2774)
+shape = SubResource("BoxShape3D_peanu")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_g2h84")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -318.5
+offset_top = -98.5
+offset_right = 318.5
+offset_bottom = 98.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_mko1u")
+
+[node name="NewGameB" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Juego Nuevo"
+
+[node name="LoadGameB" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Cargar partida"
+
+[node name="QuitB" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Salir!"
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 30
+text = "Creado por: Kevin Uriel Hernandez Cortez - 217734547
+Simulación por Computadora - 2024A.
+Proyecto Final"
+
+[node name="CameraPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5025, 0, -105.332)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 3.35137, 36.0321, 51.3292)
+
+[connection signal="pressed" from="VBoxContainer/NewGameB" to="VBoxContainer" method="_on_new_game_b_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitB" to="VBoxContainer" method="_on_quit_b_pressed"]
